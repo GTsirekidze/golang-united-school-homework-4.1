@@ -4,8 +4,8 @@ func ReverseString(input string) (output string) {
 	// solution goes here
 	r := []rune(input)
 
-	for i, j := 0, len(r)-1; i < j; i, j = i+1, j-1 {
-		r[i], r[j] = r[j], r[i]
+	for i := 0; i < len(r)/2; i++ {
+		r[i], r[len(r)-i-1] = r[len(r)-i-1], r[i]
 	}
 
 	return output
