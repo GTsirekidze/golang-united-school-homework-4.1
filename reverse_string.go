@@ -8,5 +8,5 @@ func ReverseString(input string) (output string) {
 		r[i], r[len(r)-i-1] = r[len(r)-i-1], r[i]
 	}
 
-	return output
+	return string(r)
 }
